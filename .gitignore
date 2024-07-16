@@ -54,3 +54,4 @@ dkms.conf
 # Directories
 out/
 .cache/
+compile_commands.json
