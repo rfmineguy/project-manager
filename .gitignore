@@ -55,3 +55,5 @@ dkms.conf
 out/
 .cache/
 compile_commands.json
+src/cmdline.c
+include/projman/cmdline.h
