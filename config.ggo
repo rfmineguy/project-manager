@@ -1,12 +1,13 @@
 package "projman"
 version "0.1"
-purpose "Manage where projects are located on the system"
 usage "projman <options>"
 description "Manage where projects are located on the system"
 
-option "list" l "List projects" flag off
-
-section "Register project"
+section "Subcommands"
 option "register" - "Register a new project" flag off
-option "name" n "Project name" string dependon="register" optional
-option "path" p "Project path" string dependon="register" optional
+option "delete" - "Remove project from database" flag off
+option "list" - "List projects" flag off
+
+section "common"
+option "name" n "Name to supply for commands [register, list]" string optional
+option "path" p "Path to supply for commands [register]" string optional
