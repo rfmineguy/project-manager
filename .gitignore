@@ -57,3 +57,4 @@ out/
 compile_commands.json
 src/cmdline.c
 include/projman/cmdline.h
+build/
