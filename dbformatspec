@@ -1,0 +1,10 @@
+The database file will be in CSV(comma separated value) form
+Each line will represent a new project, and each column will represent a field for that project
+There may be lines that represent delimiters to indicate that a new section has started
+
+
+Example:
+1 Name, Path, Tag0, Tag1, Tag2, ...
+2 Name, Path, Tag0, Tag1
+3 Name, Path, Tag0
+4 Name, Path, Empty
