@@ -51,6 +51,9 @@ struct gengetopt_args_info
   char * path_arg;	/**< @brief Path to supply for commands [register].  */
   char * path_orig;	/**< @brief Path to supply for commands [register] original value given at command line.  */
   const char *path_help; /**< @brief Path to supply for commands [register] help description.  */
+  char * tags_arg;	/**< @brief Tag list to supply for commands [register, list].  */
+  char * tags_orig;	/**< @brief Tag list to supply for commands [register, list] original value given at command line.  */
+  const char *tags_help; /**< @brief Tag list to supply for commands [register, list] help description.  */
   
   unsigned int help_given ;	/**< @brief Whether help was given.  */
   unsigned int version_given ;	/**< @brief Whether version was given.  */
@@ -59,6 +62,7 @@ struct gengetopt_args_info
   unsigned int list_given ;	/**< @brief Whether list was given.  */
   unsigned int name_given ;	/**< @brief Whether name was given.  */
   unsigned int path_given ;	/**< @brief Whether path was given.  */
+  unsigned int tags_given ;	/**< @brief Whether tags was given.  */
 
 } ;
 

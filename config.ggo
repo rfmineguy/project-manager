@@ -11,3 +11,4 @@ option "list" - "List projects" flag off
 section "common"
 option "name" n "Name to supply for commands [register, list]" string optional
 option "path" p "Path to supply for commands [register]" string optional
+option "tags" t "Tag list to supply for commands [register, list]" string optional

@@ -3,6 +3,8 @@ GETOPT_DIR := getopt
 SRC_DIR := src
 SOURCES := $(SRC_DIR)/*.c
 
+CFLAGS := -ggdb
+
 BIN := projman
 
 .PHONY: always build
@@ -15,4 +17,4 @@ getopt:
 #=============================
 
 $(OUT_DIR)/$(BIN): $(SOURCES)
-	gcc $^ -o $@ -I$(INCLUDE_DIR)/projman
+	gcc $^ -o $@ $(CFLAGS) -I$(INCLUDE_DIR)/projman

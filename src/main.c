@@ -1,6 +1,8 @@
 #include <stdio.h>
+#include <assert.h>
 #include "cmdline.h"
 #include "commands.h"
+#include "db.h"
 
 int main(int argc, char** argv) {
 	struct gengetopt_args_info info = {0};
